@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97EB392E-1012-46A7-B9A1-9FBD051511CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Entrance_.My.MyApplication</StartupObject>
+    <RootNamespace>Entrance_</RootNamespace>
+    <AssemblyName>Entrance_</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Entrance_.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Entrance_.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Panel.Designer.vb">
+      <DependentUpon>Admin_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBA_Exam_Panel.Designer.vb">
+      <DependentUpon>BBA_Exam_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BBA_Exam_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBA_Question_Panel.Designer.vb">
+      <DependentUpon>BBA_Question_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BBA_Question_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBA_Report.Designer.vb">
+      <DependentUpon>BBA_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BBA_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBA_set_question.Designer.vb">
+      <DependentUpon>BBA_set_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BBA_set_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBA_view_questions.Designer.vb">
+      <DependentUpon>BBA_view_questions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BBA_view_questions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCA_Exam_Panel.Designer.vb">
+      <DependentUpon>BCA_Exam_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCA_Exam_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCA_Question_Panel.Designer.vb">
+      <DependentUpon>BCA_Question_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCA_Question_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCA_Report.Designer.vb">
+      <DependentUpon>BCA_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCA_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCA_view_questions.Designer.vb">
+      <DependentUpon>BCA_view_questions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCA_view_questions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPH_Question_Panel.Designer.vb">
+      <DependentUpon>BPH_Question_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BPH_Question_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bph_report.Designer.vb">
+      <DependentUpon>Bph_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bph_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bph_set_question.Designer.vb">
+      <DependentUpon>Bph_set_question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bph_set_question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Change_password.Designer.vb">
+      <DependentUpon>Admin_Change_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Change_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admit_card.Designer.vb">
+      <DependentUpon>Admit_card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admit_card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPH_view_questions.Designer.vb">
+      <DependentUpon>BPH_view_questions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BPH_view_questions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fail_form.Designer.vb">
+      <DependentUpon>Fail_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fail_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pass_form.Designer.vb">
+      <DependentUpon>Pass_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pass_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Select_Faculty.Designer.vb">
+      <DependentUpon>Report_Select_Faculty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Select_Faculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Faculty.Designer.vb">
+      <DependentUpon>Select_Faculty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Faculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_mode.Designer.vb">
+      <DependentUpon>Select_mode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Select_mode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bca_Set_Question.Designer.vb">
+      <DependentUpon>Bca_Set_Question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bca_Set_Question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPH_Exam_Panel.Designer.vb">
+      <DependentUpon>BPH_Exam_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BPH_Exam_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security_Question.Designer.vb">
+      <DependentUpon>Security_Question.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security_Question.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_login_panel.Designer.vb">
+      <DependentUpon>Student_login_panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_login_panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_view.Designer.vb">
+      <DependentUpon>Student_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Register.Designer.vb">
+      <DependentUpon>Student_Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Login_Panel.Designer.vb">
+      <DependentUpon>Admin_Login_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Panel.Designer.vb">
+      <DependentUpon>Main_Panel.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin_Panel.resx">
+      <DependentUpon>Admin_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admit_card.resx">
+      <DependentUpon>Admit_card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBA_Exam_Panel.resx">
+      <DependentUpon>BBA_Exam_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBA_Question_Panel.resx">
+      <DependentUpon>BBA_Question_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBA_Report.resx">
+      <DependentUpon>BBA_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBA_set_question.resx">
+      <DependentUpon>BBA_set_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBA_view_questions.resx">
+      <DependentUpon>BBA_view_questions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCA_Exam_Panel.resx">
+      <DependentUpon>BCA_Exam_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCA_Question_Panel.resx">
+      <DependentUpon>BCA_Question_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCA_Report.resx">
+      <DependentUpon>BCA_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCA_view_questions.resx">
+      <DependentUpon>BCA_view_questions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPH_Question_Panel.resx">
+      <DependentUpon>BPH_Question_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bph_report.resx">
+      <DependentUpon>Bph_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bph_set_question.resx">
+      <DependentUpon>Bph_set_question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Change_password.resx">
+      <DependentUpon>Admin_Change_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPH_view_questions.resx">
+      <DependentUpon>BPH_view_questions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fail_form.resx">
+      <DependentUpon>Fail_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass_form.resx">
+      <DependentUpon>Pass_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Select_Faculty.resx">
+      <DependentUpon>Report_Select_Faculty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Faculty.resx">
+      <DependentUpon>Select_Faculty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_mode.resx">
+      <DependentUpon>Select_mode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bca_Set_Question.resx">
+      <DependentUpon>Bca_Set_Question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPH_Exam_Panel.resx">
+      <DependentUpon>BPH_Exam_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security_Question.resx">
+      <DependentUpon>Security_Question.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_login_panel.resx">
+      <DependentUpon>Student_login_panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_view.resx">
+      <DependentUpon>Student_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Register.resx">
+      <DependentUpon>Student_Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Login_Panel.resx">
+      <DependentUpon>Admin_Login_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Panel.resx">
+      <DependentUpon>Main_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Panel_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_panel_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_pb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exam_panel_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bba21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accepted image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rejected Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exam_panel_bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bph1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bph22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMP1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMP3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bph221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bph222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
